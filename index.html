@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <title>Chat UI</title>
+</head>
+<body class="h-100">
+    <div class="container h-100">
+        <div class="card h-100">
+            <div class="card-body h-100">
+                <div class="d-flex flex-column h-100">
+                    <div class="bg-light flex-grow-1 mb-3 round-2 p-3" id="msgContainer">
+                        <!-- Bot -->
+                        <div class="row"> 
+                            <div class="col-6">
+                                <div class="card bg-info">
+                                    <div class="card-body">
+                                        Hello!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6"></div>
+                        </div>
+                        <!-- Human -->
+                        <div class="row">
+                            <div class="col-6">
+                                
+                            </div>
+                            <div class="col-6">
+                                <div class="card bg-success">
+                                    <div class="card-body">
+                                        Hi!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-danger">
+                        <div class="form-group">
+                            <input type="text" id="inputPrompt" class="form-control" autofocus>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="node_modules\@popperjs\core\dist\umd\popper.js"></script>
+<script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+<script src="index.js"></script>
+</html>
